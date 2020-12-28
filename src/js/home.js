@@ -10,18 +10,11 @@ export let Home = () => {
     listItems.map(item => {
         let listItem = createElement('li', undefined, item);
         list.appendChild(listItem);
-    })
-    let buttonContainer = createElement('div');
-    let buttonMenu = createElement('button', "btn btn-primary", "Menu");
-    let buttonContact = createElement('button', "btn btn-success", "Contact");
-    buttonContainer.appendChild(buttonMenu);
-    buttonContainer.appendChild(buttonContact);
-
+    });
 
     titleContainer.appendChild(title);
     titleContainer.appendChild(paragraph);
     titleContainer.appendChild(list);
-    titleContainer.appendChild(buttonContainer);
 
     container.appendChild(titleContainer);
 

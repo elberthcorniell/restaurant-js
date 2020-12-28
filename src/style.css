@@ -1,6 +1,6 @@
 h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 70px;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
 }
 
 button {
@@ -10,6 +10,26 @@ button {
 
 nav {
     height: 50px;
+}
+
+form {
+    width: 400px;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
 }
 
 .home {
