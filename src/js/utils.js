@@ -1,15 +1,15 @@
-let tab = 1
+let tab = 1;
 
-export let createElement = (tag, className = '', content = '') => {
-  if (tag == undefined) return false
-  let element = document.createElement(tag);
-  element.className = className
+export const createElement = (tag, className = '', content = '') => {
+  if (tag === undefined) return false;
+  const element = document.createElement(tag);
+  element.className = className;
   element.innerHTML = content;
-  return element
+  return element;
 }
 
-export let setTab = (newTab) => {
-  tab = newTab
+export const setTab = (newTab) => {
+  tab = newTab;
 }
 
-export let getTab = () => tab;
+export const getTab = () => tab;
