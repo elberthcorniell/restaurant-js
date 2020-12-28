@@ -1,6 +1,6 @@
 import { createElement } from './utils';
 
-export let Contact = () => {
+const Contact = () => {
   let container = createElement('div', 'home');
   let titleContainer = createElement('div', 'home-title')
   let title = createElement('h1', undefined, 'Contact Us');
@@ -22,3 +22,5 @@ export let Contact = () => {
 
   document.getElementById('content').appendChild(container);
 }
+
+export default Contact;

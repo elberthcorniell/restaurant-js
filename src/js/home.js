@@ -1,6 +1,6 @@
-import { createElement } from './utils'
+import { createElement } from './utils';
 
-export let Home = () => {
+const Home = () => {
   let container = createElement('div', 'home');
   let titleContainer = createElement('div', 'home-title')
   let title = createElement('h1', undefined, 'Welcome To Our Kitchen');
@@ -20,3 +20,5 @@ export let Home = () => {
 
   document.getElementById('content').appendChild(container);
 }
+
+export default Home;

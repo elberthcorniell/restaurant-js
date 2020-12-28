@@ -1,6 +1,6 @@
-import { createElement } from './utils'
+import { createElement } from './utils';
 
-export let Menu = () => {
+const Menu = () => {
   let container = createElement('div', 'home');
   let titleContainer = createElement('div', 'home-title')
   let title = createElement('h1', undefined, 'Welcome To Our Menu');
@@ -20,3 +20,5 @@ export let Menu = () => {
 
   document.getElementById('content').appendChild(container);
 }
+
+export default Menu;

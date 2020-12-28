@@ -1,7 +1,7 @@
-import { Navbar } from './js/navbar';
-import { Home } from './js/home';
-import { Menu } from './js/menu';
-import { Contact } from './js/contact';
+import Navbar from './js/navbar';
+import Home from './js/home';
+import Menu from './js/menu';
+import Contact from './js/contact';
 import { getTab, setTab } from './js/utils';
 
 function mountTab() {
