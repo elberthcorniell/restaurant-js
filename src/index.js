@@ -1,11 +1,11 @@
-import { Navbar } from './js/navbar'
-import { Home } from './js/home'
-import { Menu } from './js/menu'
-import { Contact } from './js/contact'
-import { getTab, setTab } from './js/utils'
+import { Navbar } from './js/navbar';
+import { Home } from './js/home';
+import { Menu } from './js/menu';
+import { Contact } from './js/contact';
+import { getTab, setTab } from './js/utils';
 
 function mountTab() {
-  document.getElementById('content').innerHTML = ''
+  document.getElementById('content').innerHTML = '';
   Navbar();
   switch (getTab()) {
     case 1:
@@ -17,6 +17,8 @@ function mountTab() {
     case 3:
       Contact();
       break;
+    default: 
+        Home();
   }
 
   document.getElementById('home').addEventListener('click', () => { setTab(1); mountTab(); });
@@ -24,4 +26,4 @@ function mountTab() {
   document.getElementById('contact').addEventListener('click', () => { setTab(3); mountTab(); });
 }
 
-mountTab()
+mountTab();
