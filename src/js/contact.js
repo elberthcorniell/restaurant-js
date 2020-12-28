@@ -1,14 +1,14 @@
 import { createElement } from './utils';
 
 const Contact = () => {
-  let container = createElement('div', 'home');
-  let titleContainer = createElement('div', 'home-title')
-  let title = createElement('h1', undefined, 'Contact Us');
-  let paragraph = createElement('p', undefined, '<strong>Delicious food made by Dominicans served at your doorstep.</strong>');
-  let listItems = ['email', 'text', 'submit'];
-  let list = document.createElement('form');
+  const container = createElement('div', 'home');
+  const titleContainer = createElement('div', 'home-title')
+  const title = createElement('h1', undefined, 'Contact Us');
+  const paragraph = createElement('p', undefined, '<strong>Delicious food made by Dominicans served at your doorstep.</strong>');
+  const listItems = ['email', 'text', 'submit'];
+  const list = document.createElement('form');
   listItems.map(item => {
-    let listItem = createElement('input', undefined, item);
+    const listItem = createElement('input', undefined, item);
     listItem.type = item;
     listItem.placeholder = item;
     list.appendChild(listItem);

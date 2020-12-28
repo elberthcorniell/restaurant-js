@@ -12,6 +12,6 @@ const Navbar = () => {
     return true;
   });
   document.getElementById('content').appendChild(nav);
-}
+};
 
 export default Navbar;
