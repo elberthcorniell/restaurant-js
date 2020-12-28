@@ -6,10 +6,10 @@ export const createElement = (tag, className = '', content = '') => {
   element.className = className;
   element.innerHTML = content;
   return element;
-}
+};
 
 export const setTab = (newTab) => {
   tab = newTab;
-}
+};
 
 export const getTab = () => tab;

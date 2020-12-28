@@ -3,9 +3,9 @@ import { createElement } from './utils'
 export let Home = () => {
   let container = createElement('div', 'home');
   let titleContainer = createElement('div', 'home-title')
-  let title = createElement('h1', undefined, "Welcome To Our Kitchen");
-  let paragraph = createElement('p', undefined, "<strong>Delicious food made by Dominicans served at your doorstep.</strong>");
-  let listItems = ["Fresh food", "Made at order", "Fast service", "Nice guys"];
+  let title = createElement('h1', undefined, 'Welcome To Our Kitchen');
+  let paragraph = createElement('p', undefined, '<strong>Delicious food made by Dominicans served at your doorstep.</strong>');
+  let listItems = ['Fresh food', 'Made at order', 'Fast service', 'Nice guys'];
   let list = document.createElement('ul');
   listItems.map(item => {
     let listItem = createElement('li', undefined, item);
@@ -18,5 +18,5 @@ export let Home = () => {
 
   container.appendChild(titleContainer);
 
-  document.getElementById("content").appendChild(container);
+  document.getElementById('content').appendChild(container);
 }

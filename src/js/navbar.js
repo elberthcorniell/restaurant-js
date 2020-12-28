@@ -1,11 +1,12 @@
-import { createElement } from './utils'
-let menu = ["Home", "Menu", "Contact"]
+import { createElement } from './utils';
 
-export let Navbar = () => {
+const menu = ['Home', 'Menu', 'Contact'];
+
+export const Navbar = () => {
   let nav = createElement('nav', 'nav');
   menu.map(tab => {
-    let link = createElement('a', "nav-link active", tab);
-    link.href = "#";
+    let link = createElement('a', 'nav-link active', tab);
+    link.href = '#';
     link.id = tab.toLocaleLowerCase();
     nav.appendChild(link);
   })
