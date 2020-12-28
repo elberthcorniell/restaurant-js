@@ -20,7 +20,7 @@ const mountTab = () => {
     default:
       Home();
   }
-}
+};
 
 document.getElementById('home').addEventListener('click', () => { setTab(1); mountTab(); });
 document.getElementById('menu').addEventListener('click', () => { setTab(2); mountTab(); });
