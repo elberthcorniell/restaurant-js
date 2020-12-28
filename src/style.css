@@ -1,0 +1,29 @@
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+}
+
+button {
+    width: fit-content;
+    display: inline;
+}
+
+nav {
+    height: 50px;
+}
+
+.home {
+    background-image: url("./images/tuna-salad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    height: calc(100vh - 50px);
+}
+
+.home-title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
