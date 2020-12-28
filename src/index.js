@@ -17,8 +17,8 @@ function mountTab() {
     case 3:
       Contact();
       break;
-    default: 
-        Home();
+    default:
+      Home();
   }
 
   document.getElementById('home').addEventListener('click', () => { setTab(1); mountTab(); });
