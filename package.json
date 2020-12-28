@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "webpack": "npx webpack --watch"
+    "webpack": "npx webpack --watch",
+    "dev": "npx webpack --mode development",
+    "build": "npx webpack --mode production"
   },
   "repository": {
     "type": "git",
