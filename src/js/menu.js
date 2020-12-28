@@ -10,7 +10,7 @@ const Menu = () => {
   listItems.map(item => {
     const listItem = createElement('li', undefined, item);
     list.appendChild(listItem);
-    return true
+    return true;
   });
 
   titleContainer.appendChild(title);
@@ -20,6 +20,6 @@ const Menu = () => {
   container.appendChild(titleContainer);
 
   document.getElementById('content').appendChild(container);
-}
+};
 
 export default Menu;
