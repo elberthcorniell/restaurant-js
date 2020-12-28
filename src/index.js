@@ -4,7 +4,7 @@ import Menu from './js/menu';
 import Contact from './js/contact';
 import { getTab, setTab } from './js/utils';
 
-function mountTab() {
+const mountTab = () => {
   document.getElementById('content').innerHTML = '';
   Navbar();
   switch (getTab()) {
@@ -20,10 +20,10 @@ function mountTab() {
     default:
       Home();
   }
-
-  document.getElementById('home').addEventListener('click', () => { setTab(1); mountTab(); });
-  document.getElementById('menu').addEventListener('click', () => { setTab(2); mountTab(); });
-  document.getElementById('contact').addEventListener('click', () => { setTab(3); mountTab(); });
 }
+
+document.getElementById('home').addEventListener('click', () => { setTab(1); mountTab(); });
+document.getElementById('menu').addEventListener('click', () => { setTab(2); mountTab(); });
+document.getElementById('contact').addEventListener('click', () => { setTab(3); mountTab(); });
 
 mountTab();
